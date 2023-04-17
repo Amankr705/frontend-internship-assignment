@@ -7,7 +7,7 @@ import { TrendingSubjectsComponent } from '../app/components/trending-subjects/t
 const routes: Routes = [
   {
     path: '',
-    component: SearchComponent,
+    component: HomeComponent,
     title: 'Open Books Library',
   },
   {
