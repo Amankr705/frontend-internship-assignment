@@ -1,4 +1,4 @@
-<div class="header">
+<!-- <div class="header">
   <div class="tw-text-24-px tw-font-600">Open Books Library</div>
   <div class="search-button">
     <mat-icon class="tw-mt-16-px" aria-label="Search Icon">search</mat-icon>
@@ -20,4 +20,30 @@
       </li>
     </ul>
   </section>
+</div> -->
+
+<!-- sidebar.component.html -->
+<div>
+  <div class="sidebar">
+    <div class="sidebar-header">
+      <h3>Home</h3>
+    </div>
+    <ul class="sidebar-menu">
+      <li class="sidebar-item">
+        <a routerLink="/" routerLinkActive="active" class="sidebar-link">
+          <i class="fas fa-home"></i>
+          <span>Search</span>
+        </a>
+      </li>
+      <li class="sidebar-link" *ngFor="let subject of trendingSubjects" routerLink="/trending-subject/{{ subject.name }}">
+          {{ subject.name }}
+      </li>
+    </ul>
+  </div>
+  <div class="search-content">
+    <front-end-internship-assignment-search (searchResultEvent)="searchResult($event)"></front-end-internship-assignment-search>
+  </div>
+  <div class="table-view-content">
+      <front-end-internship-assignment-table-view [searchList]="searchList"></front-end-internship-assignment-table-view>
+  </div>
 </div>

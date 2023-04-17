@@ -1,0 +1,9 @@
+<div class="container">
+    <div class="search-bar">
+        <i class="fa fa-user icon"></i>
+        <input type="search" class="icon" matInput placeholder="Search by title or author" [(ngModel)]="searchQuery">
+        <button mat-raised-button color="primary" (click)="searchBooks()" [disabled]="searchQuery === ''">Search</button>
+        <div class="loader" *ngIf="loading">
+        </div>
+    </div>
+  </div>

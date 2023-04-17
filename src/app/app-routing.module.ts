@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from '../app/components/home/home.component';
+import { SearchComponent } from '../app/shared/search/search.component';
 import { TrendingSubjectsComponent } from '../app/components/trending-subjects/trending-subjects.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: HomeComponent,
+    component: SearchComponent,
     title: 'Open Books Library',
   },
   {
