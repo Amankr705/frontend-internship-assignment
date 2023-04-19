@@ -22,7 +22,7 @@ export class HomeComponent implements OnInit {
     this.searchList = item;
   }
 
-  trendingSubjects = [
+  trendingSubjects: Array<any> = [
     { name: 'JavaScript' },
     { name: 'CSS' },
     { name: 'HTML' },
